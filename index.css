@@ -1,0 +1,19 @@
+html, body {
+  background-color: #333446 !important;
+}
+
+main{
+  padding-top: 2rem;
+}
+
+body {
+  margin: 0;
+}
+
+.font{
+    color: #EAEFEF;
+}
+
+.font-headerAndFooter{
+    color: #B8CFCE !important;
+}
