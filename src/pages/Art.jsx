@@ -4,13 +4,6 @@ import PhotoAlbum from 'react-photo-album';
 import 'react-photo-album/rows.css';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
-// Thumbnail images (1280x720)
-import AffagatoThumb from '../images/Art/Affagato-thumb.png';
-import DragonflyThumb from '../images/Art/DragonflyUpclose-thumb.jpg';
-import GrasshopperThumb from '../images/Art/Grasshopper-thumb.png';
-import JarsThumb from '../images/Art/Jars-thumb.JPG';
-import JosukeThumb from '../images/Art/Josuke-thumb.jpg';
-import MusicNotesThumb from '../images/Art/MusicNotes-thumb.jpg';
 // Full-size images (1920x1080)
 import Affagato from '../images/Art/Affagato.png';
 import Dragonfly from '../images/Art/DragonflyUpclose.jpg';
@@ -23,18 +16,19 @@ const Art = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const photos = [
-    { src: AffagatoThumb, width: 512, height: 288, fullSrc: Affagato, title: 'Affagato', description: 'A delightful digital illustration' },
-    { src: DragonflyThumb, width: 512, height: 288, fullSrc: Dragonfly, title: 'Dragonfly', description: 'Nature-inspired artwork' },
-    { src: GrasshopperThumb, width: 512, height: 288, fullSrc: Grasshopper, title: 'Grasshopper', description: 'Insect illustration' },
-    { src: JarsThumb, width: 512, height: 288, fullSrc: Jars, title: 'Jars', description: 'Still life composition' },
-    { src: JosukeThumb, width: 512, height: 288, fullSrc: Josuke, title: 'Josuke', description: 'Character artwork' },
-    { src: MusicNotesThumb, width: 512, height: 288, fullSrc: MusicNotes, title: 'Music Notes', description: 'Musical inspiration' },
+    {fullSrc: Affagato, title: 'Affagato', description: 'A delightful digital illustration' },
+    { fullSrc: Dragonfly, title: 'Dragonfly', description: 'Nature-inspired artwork' },
+    { fullSrc: Grasshopper, title: 'Grasshopper', description: 'Insect illustration' },
+    { fullSrc: Jars, title: 'Jars', description: 'Still life composition' },
+    { fullSrc: Josuke, title: 'Josuke', description: 'Character artwork' },
+    { fullSrc: MusicNotes, title: 'Music Notes', description: 'Musical inspiration' },
   ];
 
   return (
     <>
+     <Header />
       <div className="container mx-auto px-4">
-        <Header />
+       
         <div className="container mx-auto px-4 font" style={{ paddingTop: '2rem' }}>
           <h1 className="text-4xl font-bold text-green-800 mb-8">Art Gallery</h1>
 

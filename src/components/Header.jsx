@@ -1,43 +1,33 @@
 import React from 'react';
+import ThemeToggle from './ThemeToggle';
+import useTheme from '../hooks/useTheme.js';
 import { Link, useLocation } from 'react-router-dom';
 import '/index.css';
-import { AiFillMoon } from "react-icons/ai";
+
 
 const Header = () => {
   const location = useLocation();
+  const { theme, toggleTheme } = useTheme()
   return (
     <nav
-      className="navbar navbar-expand-lg font-headerAndFooter px-4"
-      style={{
-        backgroundColor: '#16171f',
-        width: '100vw',
-        left: 0,
-        right: 0,
-        position: 'relative',
-        marginLeft: 'calc(50% - 50vw)',
-        marginRight: 'calc(50% - 50vw)',
-        paddingLeft: '2rem',
-        paddingRight: '2rem',
-      }}
-    >
-      <div className="container-fluid font-headerAndFooter" style={{ paddingLeft: 0, paddingRight: 0 }}>
-        <button><AiFillMoon /></button>
-        <span className="navbar-brand fw-bold font-headerAndFooter" style={{ color: '#B8CFCE' }}>Olivia Cheung</span>
-        <ul className="navbar-nav ms-auto mb-2 mb-lg-0 font-headerAndFooter">
+      className="navbar navbar-expand-lg px-4">
+      <div className="container" style={{ paddingLeft: 0, paddingRight: 0 }}>
+         <ThemeToggle theme={theme} onToggle={toggleTheme} />
+        <span className="brand fw-bold ">Olivia Cheung</span>
+        <ul className="nav-right ms-auto mb-2 mb-lg-0">
           <li className="nav-item">
             <Link
               className={`nav-link${location.pathname === '/' ? ' active' : ''}`}
               to="/"
-              style={{ color: '#B8CFCE' }}
             >
               Home
             </Link>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <Link
               className={`nav-link${location.pathname === '/projects' ? ' active' : ''}`}
               to="/projects"
-              style={{ color: '#B8CFCE' }}
+            
             >
               Projects
             </Link>
@@ -46,20 +36,10 @@ const Header = () => {
             <Link
               className={`nav-link${location.pathname === '/art' ? ' active' : ''}`}
               to="/art"
-              style={{ color: '#B8CFCE' }}
             >
               Art
             </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              className={`nav-link${location.pathname === '/about' ? ' active' : ''}`}
-              to="/about"
-              style={{ color: '#B8CFCE' }}
-            >
-              About
-            </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>

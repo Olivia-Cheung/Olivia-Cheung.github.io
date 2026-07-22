@@ -7,8 +7,9 @@ import '/index.css';
 const Projects = () => {
   return (
     <>
+     <Header />
     <div className="container mx-auto px-4">
-      <Header />
+    
      <div className="container mx-auto px-4 font" style={{ paddingTop: '2rem' }}>
 
        
