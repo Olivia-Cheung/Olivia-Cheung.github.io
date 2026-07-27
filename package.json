@@ -10,11 +10,13 @@
     "lucide-react": "^0.475.0",
     "node": "^26.5.0",
     "node.js": "^0.0.1-security",
+    "present": "^1.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.1.0",
     "react-icons": "^5.5.0",
     "react-photo-album": "^3.2.0",
     "react-router-dom": "^7.5.3",
+    "scripts": "^0.1.0",
     "sharp": "^0.35.3",
     "tsx": "4.22.0"
   },
@@ -31,5 +33,11 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
+  },
+  "allowScripts": {
+    "@tailwindcss/oxide@4.1.10": true,
+    "esbuild@0.25.3": true,
+    "esbuild@0.28.1": true,
+    "node@26.5.0": true
   }
 }
