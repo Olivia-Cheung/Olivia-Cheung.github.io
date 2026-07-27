@@ -8,8 +8,6 @@
     "@vitejs/plugin-react": "^4.3.4",
     "bootstrap": "^5.3.7",
     "lucide-react": "^0.475.0",
-    "node": "^26.5.0",
-    "node.js": "^0.0.1-security",
     "present": "^1.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.1.0",
