@@ -1,6 +1,10 @@
 import HomeImage from '../images/HomeImage.jpg';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { Mail } from 'lucide-react';
+import useTheme from '../hooks/useTheme.js';
+import linkedinLight from '../images/linkedinLight.svg';
+import linkedinDark from '../images/linkedinDark.svg';
 import '/index.css';
 
 const TICKETS = [
@@ -48,6 +52,9 @@ const STACK = [
 const ROLES = ['Software Developer', 'Frontend Developer', 'UI/UX Designer', 'Business Analyst', 'Scrum Master'];
 
 export default function Home() {
+  const { theme } = useTheme();
+  const linkedinLogo = theme === 'dark' ? linkedinLight : linkedinDark;
+
   return (
     <>
     <Header/>
@@ -70,9 +77,9 @@ export default function Home() {
         </p>
         
         <div className="hero-links">
-          <a href="mailto:olivia.mai.cheung@gmail.com">✉ Email</a>
+          <a href="mailto:olivia.mai.cheung@gmail.com"> <Mail/> Email</a>
           <a href="https://linkedin.com/in/o-cheung/" target="_blank" rel="noopener noreferrer">
-            in/ LinkedIn
+            <img src={linkedinLogo} alt="linkedin logo" width="24" height="24" /> LinkedIn
           </a>
         </div>
       </header>
