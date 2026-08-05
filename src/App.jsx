@@ -1,7 +1,7 @@
 import React from 'react';
 import HomePage from './pages/HomePage';
 import Projects from './pages/Projects';
-import Art from './pages/Art';
+import Gallery from './pages/Gallery';
 import { Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './hooks/useTheme';
 import '../index.css'; 
@@ -11,7 +11,7 @@ const App = () => (
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/projects" element={<Projects />} />
-      <Route path="/art" element={<Art />} />
+      <Route path="/gallery" element={<Gallery />} />
     </Routes>
   </ThemeProvider>
 );

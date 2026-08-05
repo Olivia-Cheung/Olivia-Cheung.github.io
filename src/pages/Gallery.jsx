@@ -26,6 +26,8 @@ const Art = () => {
           <div className="eyebrow">Welcome to my Gallery!</div>
           <h1 className="hero-title">Artwork, Photographs, and More</h1>
         </header>
+
+      
         <Footer></Footer>
     </>
   );

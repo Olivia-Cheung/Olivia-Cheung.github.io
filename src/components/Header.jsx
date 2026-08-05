@@ -34,10 +34,10 @@ const Header = () => {
           </li> */}
           <li className="nav-item">
             <Link
-              className={`nav-link${location.pathname === '/art' ? ' active' : ''}`}
-              to="/art"
+              className={`nav-link${location.pathname === '/gallery' ? ' active' : ''}`}
+              to="/gallery"
             >
-              Art
+              Gallery
             </Link>
           </li>
         </ul>
