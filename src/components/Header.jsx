@@ -31,7 +31,7 @@ const Header = () => {
             >
               Projects
             </Link>
-          </li>
+          </li> */}
           <li className="nav-item">
             <Link
               className={`nav-link${location.pathname === '/art' ? ' active' : ''}`}
@@ -39,7 +39,7 @@ const Header = () => {
             >
               Art
             </Link>
-          </li> */}
+          </li>
         </ul>
       </div>
     </nav>
